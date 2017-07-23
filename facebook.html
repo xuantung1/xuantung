@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook..</title>
+  <title>Facebook....</title>
 </head>
 <body>
  <form>
@@ -37,7 +37,7 @@
    </p>
    <button onclick="tung()" style="font-family:Helvetica;font-size:105%;color:white;background-color:SeaGreen;
                   width:246px;height:36px">Tạo tài khoản</button>
-   <p id="final"></p>
+   <a id="final"></a>
    <script>
      function tung() {
       
@@ -48,7 +48,7 @@
        var day=document.getElementById('day').value;
        var month=document.getElementById('month').value;
        var year=document.getElementById('year').value;
-       document.getElementById('final').innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten+<br>+'Số điện thoại hoặc email:'+so+<br>+'Mật khẩu:'+pw +'Ngày sinh:'+day+'/'+month+'/'+year;
+       document.getElementById("final").innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten+<br>+'Số điện thoại hoặc email:'+so+<br>+'Mật khẩu:'+pw +'Ngày sinh:'+day+'/'+month+'/'+year;
        
        return ho,ten,so,day,month,year;}
        
