@@ -37,9 +37,10 @@
    </p>
    <button onclick="tung()" style="font-family:Helvetica;font-size:105%;color:white;background-color:SeaGreen;
                   width:246px;height:36px">Tạo tài khoản</button>
+   <p id="final"></p>
    <script>
      function tung() {
-       var ho,ten,so,pw,day,month,year;
+       var ho,ten,so,pw,day,month,year,gen;
        ho=document.getElementById('ho').value;
        ten=document.getElementById('ten').value;
        so=document.getElementById('so').value;
@@ -47,6 +48,7 @@
        day=document.getElementById('day').value;
        month=document.getElementById('month').value;
        year=document.getElementById('year').value;
+       document.getElementById('final).innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten+<br>+'Số điện thoại hoặc email:'+so+<br>+'Mật khẩu:'+pw +'Ngày sinh:'+day+'/'+month+'/'+year;
        
        return ho,ten,so,day,month,year;}
        
