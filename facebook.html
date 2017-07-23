@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook..</title>
+  <title>Facebook.</title>
 </head>
 <body>
  
@@ -53,10 +53,13 @@
        var day=document.getElementById('day').value;
        var month=document.getElementById('month').value;
        var year=document.getElementById('year').value;
-       document.getElementById("name").innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten;
+       var name='Họ:'+ho+'   '+'Tên:'+ten;
+       document.getElementById("name").innerHTML = name ;
        document.getElementById("num").innerHTML = 'Số điện thoại hoặc email:'+ so;
        document.getElementById("pass").innerHTML = 'Mật khẩu:'+ pw;
        document.getElementById("birthday").innerHTML = 'Ngày sinh:'+day+'-'+month+'-'+year;
+       
+       return name, so, pw, day, month, year;
       
        
        
