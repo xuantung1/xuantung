@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook.hoho</title>
+  <title>Facebook.hohohotitle>
 </head>
 <body>
  
@@ -27,8 +27,8 @@
    </select> 
    <p style="font-family:Helvetica;font-size:70%;"> Tại sao tôi cần cung cấp ngày<br> sinh của mình?</p>
    <br>
-    <input type="radio" name="g" value="f" >Nữ</input>
-    <input type="radio" name="g" value="m" >Nam</input><br>
+    <input type="radio" name="g" value="f" id="gen">Nữ</input>
+    <input type="radio" name="g" value="m" id="gen" >Nam</input><br>
    <p style="font-family:Helvetica;font-size:70%;color:DimGray">Bằng cách nhấp vào Tạo tài khoản, bạn đồng ý với 
      <a href=https://www.facebook.com/legal/terms>Điều khoản</a><br>của chúng tôi
      và rằng bạn đã đọc <a href=https://www.facebook.com/about/privacy>Chính sách dữ liệu</a> 
@@ -42,6 +42,7 @@
    <p id="num"></p>
    <p id="pass"></p>
    <p id="birhtday"><p/>
+   <p id="gender"></p>
    
    <script>
      function tung() {
@@ -53,11 +54,13 @@
        var day=document.getElementById('day').value;
        var month=document.getElementById('month').value;
        var year=document.getElementById('year').value;
+       var gen=document.getElementById('year').value;
        var name='Họ:'+ho+'   '+'Tên:'+ten;
        document.getElementById("name").innerHTML = name ;
        document.getElementById("num").innerHTML = 'Số điện thoại hoặc email:'+ so;
        document.getElementById("pass").innerHTML = 'Mật khẩu:'+ pw;
        document.getElementById("birthday").innerHTML = 'Ngày sinh:'+day+'-'+month+'-'+year;
+       document.getElementById("gender").innerHTML = 'Giới tính:'+gen;
        
        return name, so, pw, day, month, year;
       
