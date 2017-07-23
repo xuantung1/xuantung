@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook.kk</title>
+  <title>Facebook.</title>
 </head>
 <body>
  
@@ -41,8 +41,7 @@
    <p id="num"></p>
    <p id="pass"></p>
    <p id="birhtday"><p/>
-   <p id="birthmon"></p>
-   <p id="birthyear"></p>
+   
    <script>
      function tung() {
       
@@ -54,11 +53,10 @@
        var month=document.getElementById('month').value;
        var year=document.getElementById('year').value;
        document.getElementById("name").innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten;
-       document.getElementById("num").innerHTML = so;
-       document.getElementById("pass").innerHTML = pw;
-       document.getElementById("birthday").innerHTML = day;
-       document.getElementById("birthmon").innerHTML = month;
-       document.getElementById("birthyear").innerHTML = year;
+       document.getElementById("num").innerHTML = 'Số điện thoại hoặc email:' so;
+       document.getElementById("pass").innerHTML = 'Mật khẩu:' pw;
+       document.getElementById("birthday").innerHTML = 'Ngày sinh:'+day+'-'+month+'-'+year;
+      
        
        
        }
