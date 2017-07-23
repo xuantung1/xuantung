@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Facebook</title>
+  <title>Facebook./title>
 </head>
 <body>
  <form>
@@ -37,7 +37,12 @@
    </p>
    <button onclick="tung()" style="font-family:Helvetica;font-size:105%;color:white;background-color:SeaGreen;
                   width:246px;height:36px">Tạo tài khoản</button>
-   <p id="final"></p>
+   <p id="name"></p>
+   <p id="num"></p>
+   <p id="pass"></p>
+   <p id="birhtday"><p/>
+   <p id="birthmon"></p>
+   <p id="birthyear"></p>
    <script>
      function tung() {
       
@@ -48,7 +53,13 @@
        var day=document.getElementById('day').value;
        var month=document.getElementById('month').value;
        var year=document.getElementById('year').value;
-       document.getElementById("final").innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten+<br>+'Số điện thoại hoặc email:'+so+<br>+'Mật khẩu:'+pw +'Ngày sinh:'+day+'/'+month+'/'+year;
+       document.getElementById("name").innerHTML = 'Họ:'+ho+'   '+'Tên:'+ten;
+       document.getElementById("num").innerHTML = so;
+       document.getElementById("pass").innerHTML = pw;
+       document.getElementById("birthday").innerHTML = day;
+       document.getElementById("birthmon").innerHTML = month;
+       document.getElementById("birthyear").innerHTML = year;
+       
        return ho,ten,so,pw,day,month,year;
        }
        
