@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div id="id" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:blue;width:100px;height:50px;">Di chuột</div>
+    <div id="id1" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Di chuột</div>
+    <div id="id2" onmousedown="downf(that)" onmouseup="upf(that)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Nhấn chuột</div>
+    <div id="id3" onclick="clicknhieulan(these)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Click đi</div>
 
 
 <script>
     function overf() {
-        document.getElementById('id').innerHTML='bỏ ra';}
+        document.getElementById('id1').innerHTML='bỏ ra';
+    }
     function outf() {
-        document.getElementById('id').innerHTML='Di chuột';}
+        document.getElementById('id1').innerHTML='Di chuột';
+    }
+   //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    function downf() {
+        document.getElementyId('id2').style.backgroundColor = Cyan;
+        document.getElementyId('id2').innerHTML = 'thả ra';
+    }
+    function upf() {
+        document.getElementById('id2').style.backgroundColor = BlueViolet;
+        document.getElementyId('id2').innerHTML = 'Nhấn chuột';
+    }
+    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    function clicknhieulan() {
+        
+    
+        
         
         
         
