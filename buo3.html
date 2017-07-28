@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>DOM event</title>
+</head>
 <body>
     <div id="id1" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Di chuột</div>
     <div id="id2" onmousedown="downf(that)" onmouseup="upf(that)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Nhấn chuột</div>
-    <div id="id3" onclick="clicknhieulan(these)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Click đi</div>
+    <div id="id3" onclick="clickMeEvent(these)" style="background-color:BlueViolet;width:450px;height:300px;;padding:40px;">Click Me</div>
 
 
 <script>
@@ -23,7 +26,26 @@
         document.getElementyId('id2').innerHTML = 'Nhấn chuột';
     }
     //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-    function clicknhieulan() {
+    
+function clickMeEvent(obj) {
+  if (obj.innerHTML == "Click Me") {
+    obj.innerHTML = "Click Me<br>Click Me Again";
+    return;
+  }
+  if (obj.innerHTML == "Click Me<br>Click Me Again") {
+    obj.innerHTML = "Thank You";  
+    return; 
+  }
+  if (obj.innerHTML == "Thank You") {
+  obj.innerHTML = "Goodbye";  
+    return; 
+  }
+  if (obj.innerHTML == "Goodbye") {
+    obj.style.display = "none";
+    return;
+  }
+}
+
         
     
         
