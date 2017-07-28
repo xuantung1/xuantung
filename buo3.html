@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <div id="id" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:blue;width:100px;height:50px;">Di chuột</div>
 
-<div onmousedown="mDown(this)" onmouseup="mUp(this)"
-style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
-Click Me</div>
 
 <script>
-function mDown(obj) {
-    obj.style.backgroundColor = "#1ec5e5";
-    obj.innerHTML = "Release Me";
-}
-
-function mUp(obj) {
-    obj.style.backgroundColor="#D94A38";
-    obj.innerHTML="Thank You";
-}
-
-
-
+    function overf() {
+        document.getElementById('id').innerHTML='bỏ ra';}
+    function outf() {
+        document.getElementById('id').innerHTML='Di chuột';}
+        
+        
+        
 
 </script>
 
