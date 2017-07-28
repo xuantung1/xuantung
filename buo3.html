@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DOMevent</title>
+    <title>DOM.event</title>
 </head>
 <body>
-    <div id="id1" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:LightBlue;width:450px;height:300px;;padding:40px;">Di chuột</div>
+    <div id="id1" onmouseover="overf(this)" onmouseout="outf(this)" style="background-color:LightBlue;width:200px;height:90px;;padding:40px;">Di chuột</div>
     <br>
-    <div id="id2" onmousedown="downf(this)" onmouseup="upf(this)" style="background-color:LightBlue;width:450px;height:300px;;padding:40px;">Nhấn chuột</div>
+    <div id="id2" onmousedown="downf(this)" onmouseup="upf(this)" style="background-color:LightBlue;width:200px;height:90px;;padding:40px;">Nhấn chuột</div>
     <br>
-    <div id="id3" onclick="clickMeEvent(this)" style="background-color:LightBlue;width:450px;height:300px;;padding:40px;">Click Me</div>
+    <div id="id3" onclick="clickMeEvent(this)" style="background-color:LightBlue;width:200px;height:90px;;padding:40px;">Click Me</div>
 
 
 <script>
@@ -20,8 +20,8 @@
     }
    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     function downf() {
-        document.getElementyId('id2').style.backgroundColor = Lime;
-        document.getElementyId('id2').innerHTML = 'thả ra';
+        document.getElementById('id2').style.backgroundColor = Lime;
+        document.getElementById('id2').innerHTML = 'thả ra';
     }
     function upf() {
         document.getElementById('id2').style.backgroundColor = LightBlue;
